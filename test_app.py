@@ -16,7 +16,7 @@ if not st.session_state["authenticated"]:
         if password_input == PASSWORD:
             st.session_state["authenticated"] = True
             st.success("認証に成功しました！")
-            st.experimental_rerun()
+            st.rerun()
         else:
             st.error("パスコードが違います。もう一度入力してください。")
 
