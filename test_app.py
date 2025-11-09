@@ -62,7 +62,16 @@ else:
     else:
         st.info("💡 取得株価と株数を入力すると結果が表示されます。")
         
-    st.text("\n\nPythonの勉強で作ったテストページです。\n2025.11.8\n「株の利確ラインどうする？ver.3」")
+    st.markdown(
+        """
+        <p style='text-align: right; font-size: 13px; color: #888;'>
+        Pythonの勉強で作ったテストページです。<br>
+        2025.11.8<br>
+        「株の利確ラインどうする？ver.3」
+        </p>
+        """,
+        unsafe_allow_html=True
+    )
 
     # ログアウトボタン    
     if st.button("ログアウト"):
